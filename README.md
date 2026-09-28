@@ -57,7 +57,7 @@ Edit `practice_pkg/db_helper.py` to set up your MySQL connection info:
 DB_CONFIG = dict(
     host: '172.29.192.1',  # Replace with your Windows Host IP (check via $ ip route show | grep default | awk '{print $3}')
     user: 'root',
-    password: 'YOUR_PASSWORD',
+    password: 'YOUR_PASSWORD', # Replace with your MySQL Workbench password
     database: 'rosdb',
     charset="utf8mb4"
 )
