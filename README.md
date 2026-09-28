@@ -55,7 +55,7 @@ Edit `practice_pkg/db_helper.py` to set up your MySQL connection info:
 
 ```python
 DB_CONFIG = dict(
-    host: '172.29.192.1',  # Replace with your Windows Host IP (check via `$ ip route show | grep default | awk '{print $3}'`)
+    host: '172.29.192.1',  # Replace with your Windows Host IP (check via $ ip route show | grep default | awk '{print $3}')
     user: 'root',
     password: 'YOUR_PASSWORD',
     database: 'rosdb',
