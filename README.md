@@ -43,7 +43,7 @@ A ROS 2 (Humble) package that provides a PyQt5 Graphical User Interface (GUI) to
 
 ### Python Package Installation
 ```bash
-pip install PyQt5 pymysql
+pip3 install pymysql
 ```
 
 ---
@@ -54,13 +54,13 @@ pip install PyQt5 pymysql
 Edit `practice_pkg/db_helper.py` to set up your MySQL connection info:
 
 ```python
-self.config = {
-    'host': '172.29.192.1',  # Replace with your Windows Host IP (check via `ip route show`)
-    'user': 'root',
-    'password': 'YOUR_PASSWORD',
-    'database': 'rosdb',
-    'port': 3306
-}
+DB_CONFIG = dict(
+    host: '172.29.192.1',  # Replace with your Windows Host IP (check via `$ ip route show | grep default | awk '{print $3}'`)
+    user: 'root',
+    password: 'YOUR_PASSWORD',
+    database: 'rosdb',
+    charset="utf8mb4"
+)
 ```
 
 ### 2. Grant External Access (If using Windows Host MySQL)
